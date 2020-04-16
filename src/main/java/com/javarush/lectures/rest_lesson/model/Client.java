@@ -37,4 +37,6 @@ public class Client {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    // Ненужная строка для revert
 }
