@@ -2,7 +2,7 @@ package com.javarush.lectures.rest_lesson.model;
 
 public class Client {
     // id of Client
-    private Integer id;
+    private Int id;
     // Client's name
     private String name;
     // Client's phone number
