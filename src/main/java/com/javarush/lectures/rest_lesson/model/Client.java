@@ -1,10 +1,13 @@
 package com.javarush.lectures.rest_lesson.model;
 
 public class Client {
-    // ИД клиента
+    // id of Client
     private Integer id;
+    // Client's name
     private String name;
+    // Client's phone number
     private String phone;
+    // Client's email address
     private String email;
 
     public Integer getId() {
