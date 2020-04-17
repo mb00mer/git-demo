@@ -18,6 +18,7 @@ public class ClientServiceImpl implements ClientService {
     // Переменная для генерации ID клиента
     private static final AtomicInteger CLIENT_ID = new AtomicInteger();
 
+    // Создает нового клиента
     @Override
     public void create(Client client) {
         final int id = CLIENT_ID.incrementAndGet();
@@ -25,16 +26,19 @@ public class ClientServiceImpl implements ClientService {
         CLIENT_MAP.put(id, client);
     }
 
+    // Возвращает список клиентов
     @Override
     public List<Client> readAll() {
         return new ArrayList<>(CLIENT_MAP.values());
     }
 
+    // Возвращает клиента с заданным id
     @Override
     public Client read(int id) {
         return CLIENT_MAP.get(id);
     }
 
+    // Обновляет клиентв
     @Override
     public boolean update(Client client, int id) {
         if (CLIENT_MAP.containsKey(id)) {
@@ -45,6 +49,7 @@ public class ClientServiceImpl implements ClientService {
         return false;
     }
 
+    // Удаляет клиента
     @Override
     public boolean delete(int id) {
         return CLIENT_MAP.remove(id) != null;
