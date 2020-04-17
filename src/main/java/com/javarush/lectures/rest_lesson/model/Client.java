@@ -1,6 +1,7 @@
 package com.javarush.lectures.rest_lesson.model;
 
 public class Client {
+    // ИД клиента
     private Integer id;
     private String name;
     private String phone;
