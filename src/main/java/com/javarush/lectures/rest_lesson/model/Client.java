@@ -3,8 +3,11 @@ package com.javarush.lectures.rest_lesson.model;
 public class Client {
     // ИД клиента
     private Integer id;
+    // Имя клиента
     private String name;
+    // Телефон клиента
     private String phone;
+    // Электронная почта клиента
     private String email;
 
     public Integer getId() {
