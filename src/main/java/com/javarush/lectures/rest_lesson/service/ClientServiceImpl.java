@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Service
 public class ClientServiceImpl implements ClientService {
 
-    // Хранилище клиентов
+    // Хранилище клиентов. Позже заменим на DB
     private static final Map<Integer, Client> CLIENT_MAP = new HashMap<>();
 
     // Поле для генерации ID клиента
