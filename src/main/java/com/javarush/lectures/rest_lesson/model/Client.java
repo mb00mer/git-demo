@@ -9,6 +9,8 @@ public class Client {
     private String phone;
     // Client's email address
     private String email;
+    // Active client account or not
+    private boolean isActive;
 
     public Integer getId() {
         return id;
@@ -40,5 +42,13 @@ public class Client {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
     }
 }
