@@ -15,7 +15,7 @@ public class ClientServiceImpl implements ClientService {
     // Хранилище клиентов
     private static final Map<Integer, Client> CLIENT_MAP = new HashMap<>();
 
-    // Переменная для генерации ID клиента
+    // Поле для генерации ID клиента
     private static final AtomicInteger CLIENT_ID = new AtomicInteger();
 
     // Создает нового клиента

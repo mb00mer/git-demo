@@ -8,7 +8,6 @@ public class Client {
     // Client's phone number
     private String phone;
     // Client's email address
-
     private String email;
 
     public Integer getId() {
